@@ -110,6 +110,7 @@ class SingleOtpInput extends PureComponent<*> {
           }}
           disabled={isDisabled}
           value={value ? value : ''}
+          pattern={isInputNum ? "\d*" : undefined}
           {...rest}
         />
         {!isLastChild && separator}
